@@ -19,7 +19,7 @@
         android:layout_height="wrap_content" />
 
     <Button
-        android:id="@+id/btnDone"
+        android:id="@+id/btn12_1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@drawable/buttonround"
@@ -35,7 +35,7 @@
         android:textSize="16sp" />
 
     <Button
-        android:id="@+id/reStart"
+        android:id="@+id/btn12_2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@drawable/buttonround"

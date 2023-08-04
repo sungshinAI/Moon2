@@ -15,7 +15,7 @@ import java.util.Locale;
 public class elevenpageActivity extends AppCompatActivity {
 
     private DatePicker datePicker;
-    private Button btnNext;
+    private Button btn11_1; // NEXT
 
 
     @Override
@@ -24,9 +24,9 @@ public class elevenpageActivity extends AppCompatActivity {
         setContentView(R.layout.elevenpage);
 
         datePicker = findViewById(R.id.datePicker);
-        btnNext = findViewById(R.id.btnNext);
+        btn11_1 = findViewById(R.id.btn11_1);
 
-        btnNext.setOnClickListener(new View.OnClickListener() {
+        btn11_1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 int year = datePicker.getYear();
@@ -38,6 +38,7 @@ public class elevenpageActivity extends AppCompatActivity {
                 SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd", Locale.getDefault());
                 String formattedDate = dateFormat.format(selectedDate.getTime());
 
+                // 화면 전환
                 Intent intent = new Intent(elevenpageActivity.this, twelvepageActivity.class);
                 intent.putExtra("selected_date", formattedDate);
                 startActivity(intent);

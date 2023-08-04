@@ -22,7 +22,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
         android:layout_marginTop="96dp"
-        android:text="참여자 님이 원하는 장소를\n등록해주세요"
+        android:text="약속 장소 후보를 등록해주세요"
         android:textColor="#000000"
         android:textSize="25sp"
         android:textStyle="bold"
@@ -33,15 +33,17 @@
         android:id="@+id/button2"
         android:layout_width="280dp"
         android:layout_height="40dp"
+        android:layout_marginBottom="60dp"
         android:background="@drawable/buttonround"
         android:backgroundTint="#D9D9D9"
         android:gravity="center"
-        android:text="장소 입력"
+        android:text="홍대입구역"
         android:textColor="#000000"
         android:textColorLink="#FFFFFF"
         android:textSize="16sp"
-        tools:layout_editor_absoluteX="65dp"
-        tools:layout_editor_absoluteY="267dp" />
+        app:layout_constraintBottom_toTopOf="@+id/button9"
+        tools:layout_editor_absoluteX="65dp" />
+
 
     <Button
         android:id="@+id/button"
@@ -59,7 +61,7 @@
         tools:layout_editor_absoluteX="46dp" />
 
     <ImageButton
-        android:id="@+id/imageButton"
+        android:id="@+id/back"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
@@ -67,5 +69,34 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/back" />
+
+    <Button
+        android:id="@+id/button9"
+        android:layout_width="280dp"
+        android:layout_height="40dp"
+        android:background="@drawable/buttonround"
+        android:backgroundTint="#D9D9D9"
+        android:gravity="center"
+        android:text="성신여대입구역"
+        android:textColor="#000000"
+        android:textColorLink="#FFFFFF"
+        android:textSize="16sp"
+        tools:layout_editor_absoluteX="65dp"
+        tools:layout_editor_absoluteY="345dp" />
+
+    <Button
+        android:id="@+id/button10"
+        android:layout_width="280dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/buttonround"
+        android:backgroundTint="#D9D9D9"
+        android:gravity="center"
+        android:text="강남역"
+        android:textColor="#000000"
+        android:textColorLink="#FFFFFF"
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@+id/button9"
+        tools:layout_editor_absoluteX="65dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

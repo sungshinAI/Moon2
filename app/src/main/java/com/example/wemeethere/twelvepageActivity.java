@@ -21,8 +21,8 @@ import java.util.Locale;
 public class twelvepageActivity extends AppCompatActivity {
 
     private TimePicker timePicker;
-    private Button btnDone; // Done 버튼
-    private Button reStart; // 전(날짜 선택) page로 돌아가는 버튼
+    private Button btn12_1; // Done 버튼
+    private Button btn12_2; // 전(날짜 선택) page로 돌아가는 버튼
     private TextView tvSelectedDate; // "선택한 날짜 : "
     private TextView selectedDateTimeTextView; // "선택한 날짜와 시간"
 
@@ -36,8 +36,8 @@ public class twelvepageActivity extends AppCompatActivity {
         setContentView(R.layout.twelvepage);
 
         timePicker=findViewById(R.id.timePicker);
-        btnDone = findViewById(R.id.btnDone);
-        reStart = findViewById(R.id.reStart);
+        btn12_1 = findViewById(R.id.btn12_1);
+        btn12_2 = findViewById(R.id.btn12_2);
         tvSelectedDate = findViewById(R.id.tvSelectedDate);
         selectedDateTimeTextView = findViewById(R.id.selectedDateTimeTextView);
 
@@ -46,7 +46,7 @@ public class twelvepageActivity extends AppCompatActivity {
         tvSelectedDate.setText("선택한 날짜: " + selectedDate);
 
         // Done 버튼 눌렀을 때
-        btnDone.setOnClickListener(new View.OnClickListener() {
+        btn12_1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 int hour = timePicker.getHour(); // 시
@@ -72,9 +72,10 @@ public class twelvepageActivity extends AppCompatActivity {
             }
         });
 
-        reStart.setOnClickListener(new View.OnClickListener() { // 날짜 선택 Page로 돌아가기 버튼
+        btn12_2.setOnClickListener(new View.OnClickListener() { // 날짜 선택 Page로 돌아가기 버튼
             @Override
             public void onClick(View view) {
+                // 화면 전환
                 Intent intent = new Intent(twelvepageActivity.this, elevenpageActivity.class); // Page 전환
                 intent.putStringArrayListExtra("accumulated_selections", accumulatedSelections); // 누적되게 만들어주는 코드
                 startActivity(intent);
@@ -122,7 +123,6 @@ public class twelvepageActivity extends AppCompatActivity {
 
         // Allow multiple date selection
         datePickerDialog.getDatePicker().setOnDateChangedListener(null); // 다중 선택 가능하도록 설정
-
         datePickerDialog.show();
     }
 
