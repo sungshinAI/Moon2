@@ -7,6 +7,21 @@
     android:padding="16dp">
 
     <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2/3"
+        android:textSize="18sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:text="참여자 님의 일정을\n되는 시간으로 선택해주세요"
+        android:textColor="@color/black"
+        android:textStyle="bold" />
+
+
+    <TextView
         android:id="@+id/tvSelectedDate"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -28,8 +43,8 @@
 
     <TextView
         android:id="@+id/selectedDateTimeTextView"
-        android:layout_width="386dp"
-        android:layout_height="168dp"
+        android:layout_width="384dp"
+        android:layout_height="100dp"
         android:text="[선택한 날짜와 시간]"
         android:textColor="#000000"
         android:textSize="16sp" />
