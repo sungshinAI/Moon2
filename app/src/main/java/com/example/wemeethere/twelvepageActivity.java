@@ -23,6 +23,7 @@ public class twelvepageActivity extends AppCompatActivity {
     private TimePicker timePicker;
     private Button btn12_1; // Done 버튼
     private Button btn12_2; // 전(날짜 선택) page로 돌아가는 버튼
+    private Button btn12_3; // 완료 버튼. 장소투표 Page로 화면 전환
     private TextView tvSelectedDate; // "선택한 날짜 : "
     private TextView selectedDateTimeTextView; // "선택한 날짜와 시간"
 
@@ -38,6 +39,7 @@ public class twelvepageActivity extends AppCompatActivity {
         timePicker=findViewById(R.id.timePicker);
         btn12_1 = findViewById(R.id.btn12_1);
         btn12_2 = findViewById(R.id.btn12_2);
+        btn12_3 = findViewById(R.id.btn12_3);
         tvSelectedDate = findViewById(R.id.tvSelectedDate);
         selectedDateTimeTextView = findViewById(R.id.selectedDateTimeTextView);
 
@@ -96,6 +98,15 @@ public class twelvepageActivity extends AppCompatActivity {
             stringBuilder.append(dateTime).append("\n");
         }
         selectedDateTimeTextView.setText("누적된 선택 내용:\n" + stringBuilder.toString());
+
+        // 장소 투표 page로 화면 전환
+        btn12_3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(twelvepageActivity.this, sixteenpageActivity.class);
+                startActivity(intent);
+            }
+        });
     }
 
     private void showDatePickerDialog() { // 날짜 선택 Dialog를 표시하는 메서드
