@@ -12,8 +12,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:gravity="center"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteX="31dp"
         tools:layout_editor_absoluteY="61dp"
         tools:unfocusedMonthDateColor="#2196F3" />
 
@@ -21,47 +20,37 @@
         android:id="@+id/homeButton"
         android:layout_width="40dp"
         android:layout_height="40dp"
-        android:layout_marginStart="30dp"
-        android:layout_marginBottom="16dp"
         android:background="@android:color/transparent"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/home1" />
+        app:srcCompat="@drawable/home1"
+        tools:layout_editor_absoluteX="30dp"
+        tools:layout_editor_absoluteY="675dp" />
 
     <ImageButton
         android:id="@+id/checkButton"
         android:layout_width="40dp"
         android:layout_height="40dp"
-        android:layout_marginEnd="30dp"
-        android:layout_marginBottom="16dp"
         android:background="@android:color/transparent"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:srcCompat="@drawable/home4" />
+        app:srcCompat="@drawable/home4"
+        tools:layout_editor_absoluteX="341dp"
+        tools:layout_editor_absoluteY="675dp" />
 
     <ImageButton
         android:id="@+id/listButton"
         android:layout_width="40dp"
         android:layout_height="40dp"
-        android:layout_marginBottom="16dp"
         android:background="@android:color/transparent"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/calButton"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/homeButton"
-        app:srcCompat="@drawable/home2" />
+        app:srcCompat="@drawable/home2"
+        tools:layout_editor_absoluteX="134dp"
+        tools:layout_editor_absoluteY="675dp" />
 
     <ImageButton
         android:id="@+id/calButton"
         android:layout_width="40dp"
         android:layout_height="40dp"
-        android:layout_marginBottom="16dp"
         android:background="@android:color/transparent"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/checkButton"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/listButton"
-        app:srcCompat="@drawable/home3" />
+        app:srcCompat="@drawable/home3"
+        tools:layout_editor_absoluteX="238dp"
+        tools:layout_editor_absoluteY="675dp" />
 
     <TextView
         android:id="@+id/tv_text"

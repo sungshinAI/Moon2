@@ -1,5 +1,7 @@
 package com.example.wemeethere;
 
+import androidx.appcompat.app.AppCompatActivity;
+
 import android.app.DatePickerDialog;
 import android.content.Intent;
 import android.os.Bundle;
@@ -8,9 +10,6 @@ import android.widget.Button;
 import android.widget.DatePicker;
 import android.widget.TextView;
 import android.widget.TimePicker;
-import android.widget.Toast;
-
-import androidx.appcompat.app.AppCompatActivity;
 
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
@@ -18,7 +17,7 @@ import java.util.Calendar;
 import java.util.List;
 import java.util.Locale;
 
-public class twelvepageActivity extends AppCompatActivity {
+public class twelevepageActivity extends AppCompatActivity {
 
     private TimePicker timePicker;
     private Button btn12_1; // Done 버튼
@@ -34,7 +33,7 @@ public class twelvepageActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.twelvepage);
+        setContentView(R.layout.twelevepage);
 
         timePicker=findViewById(R.id.timePicker);
         btn12_1 = findViewById(R.id.btn12_1);
@@ -74,11 +73,12 @@ public class twelvepageActivity extends AppCompatActivity {
             }
         });
 
+        // 전(날짜 선택) page로 돌아가는 버튼
         btn12_2.setOnClickListener(new View.OnClickListener() { // 날짜 선택 Page로 돌아가기 버튼
             @Override
             public void onClick(View view) {
                 // 화면 전환
-                Intent intent = new Intent(twelvepageActivity.this, elevenpageActivity.class); // Page 전환
+                Intent intent = new Intent(twelevepageActivity.this, elevenpageActivity.class); // Page 전환
                 intent.putStringArrayListExtra("accumulated_selections", accumulatedSelections); // 누적되게 만들어주는 코드
                 startActivity(intent);
             }
@@ -99,11 +99,11 @@ public class twelvepageActivity extends AppCompatActivity {
         }
         selectedDateTimeTextView.setText("누적된 선택 내용:\n" + stringBuilder.toString());
 
-        // 장소 투표 page로 화면 전환
+        // 완료 버튼. 장소투표 Page로 화면 전환
         btn12_3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(twelvepageActivity.this, sixteenpageActivity.class);
+                Intent intent = new Intent(twelevepageActivity.this, sixteenpageActivity.class);
                 startActivity(intent);
             }
         });

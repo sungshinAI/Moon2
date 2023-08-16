@@ -12,21 +12,19 @@ import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Locale;
 
-public class elevenpageActivity extends AppCompatActivity {
-
+public class sixpageActivity extends AppCompatActivity {
     private DatePicker datePicker;
-    private Button btn11_1; // NEXT
-
+    private Button btn6_1; // NEXT
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.elevenpage);
+        setContentView(R.layout.sixpage);
 
         datePicker = findViewById(R.id.datePicker);
-        btn11_1 = findViewById(R.id.btn11_1);
+        btn6_1 = findViewById(R.id.btn6_1);
 
-        btn11_1.setOnClickListener(new View.OnClickListener() {
+        btn6_1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 int year = datePicker.getYear();
@@ -39,10 +37,11 @@ public class elevenpageActivity extends AppCompatActivity {
                 String formattedDate = dateFormat.format(selectedDate.getTime());
 
                 // 화면 전환
-                Intent intent = new Intent(elevenpageActivity.this, twelevepageActivity.class);
+                Intent intent = new Intent(sixpageActivity.this, sevenpageActivity.class);
                 intent.putExtra("selected_date", formattedDate);
                 startActivity(intent);
             }
         });
+
     }
 }

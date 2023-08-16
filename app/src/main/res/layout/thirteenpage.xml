@@ -10,31 +10,26 @@
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="65dp"
         android:text="3/3"
         android:textSize="18sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        tools:layout_editor_absoluteX="24dp"
+        tools:layout_editor_absoluteY="65dp" />
 
     <TextView
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="96dp"
         android:text="약속 장소 후보를 등록해주세요"
         android:textColor="#000000"
         android:textSize="25sp"
         android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        tools:layout_editor_absoluteX="24dp"
+        tools:layout_editor_absoluteY="96dp" />
 
     <Button
         android:id="@+id/button2"
         android:layout_width="280dp"
         android:layout_height="40dp"
-        android:layout_marginBottom="60dp"
         android:background="@drawable/buttonround"
         android:backgroundTint="#D9D9D9"
         android:gravity="center"
@@ -42,15 +37,14 @@
         android:textColor="#000000"
         android:textColorLink="#FFFFFF"
         android:textSize="16sp"
-        app:layout_constraintBottom_toTopOf="@+id/button9"
-        tools:layout_editor_absoluteX="65dp" />
+        tools:layout_editor_absoluteX="65dp"
+        tools:layout_editor_absoluteY="245dp" />
 
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/btn13_1"
         android:layout_width="320dp"
         android:layout_height="45dp"
-        android:layout_marginBottom="50dp"
         android:background="@drawable/buttonround"
         android:backgroundTint="#1463fc"
         android:gravity="center"
@@ -58,18 +52,16 @@
         android:textColor="#FFFFFF"
         android:textSize="18sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        tools:layout_editor_absoluteX="46dp" />
+        tools:layout_editor_absoluteX="46dp"
+        tools:layout_editor_absoluteY="637dp" />
 
     <ImageButton
         android:id="@+id/back"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/back" />
+        app:srcCompat="@drawable/back"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="16dp" />
 
     <Button
         android:id="@+id/button9"
@@ -89,7 +81,6 @@
         android:id="@+id/button10"
         android:layout_width="280dp"
         android:layout_height="40dp"
-        android:layout_marginTop="60dp"
         android:background="@drawable/buttonround"
         android:backgroundTint="#D9D9D9"
         android:gravity="center"
@@ -97,7 +88,18 @@
         android:textColor="#000000"
         android:textColorLink="#FFFFFF"
         android:textSize="16sp"
-        app:layout_constraintTop_toBottomOf="@+id/button9"
-        tools:layout_editor_absoluteX="65dp" />
+        tools:layout_editor_absoluteX="65dp"
+        tools:layout_editor_absoluteY="445dp" />
+
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="장소 입력"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        tools:layout_editor_absoluteX="174dp"
+        tools:layout_editor_absoluteY="193dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

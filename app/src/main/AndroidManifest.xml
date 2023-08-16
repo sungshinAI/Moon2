@@ -13,28 +13,7 @@
         android:theme="@style/Theme.WeMeetHere"
         tools:targetApi="31">
         <activity
-            android:name=".sixteenpageActivity"
-            android:exported="false" />
-        <activity
-            android:name=".twelvepageActivity"
-            android:exported="false" />
-        <activity
-            android:name=".elevenpageActivity"
-            android:exported="false" />
-        <activity
-            android:name=".twentyonepageActivity"
-            android:exported="false" />
-        <activity
-            android:name=".twentyfourpageActivity"
-            android:exported="false" />
-        <activity
-            android:name=".thirteenpageActivity"
-            android:exported="false" />
-        <activity
-            android:name=".tenpageActivity"
-            android:exported="false" />
-        <activity
-            android:name=".ninepageActivity"
+            android:name=".HomeActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -42,6 +21,21 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".sevenpageActivity" />
+        <activity android:name=".sixpageActivity" />
+        <activity android:name=".MainActivity"/>
+        <activity android:name=".RegisterActivity"/>
+        <activity android:name=".LoginActivity"/>
+        <activity android:name=".twentyfiveActivity"/>
+        <activity android:name=".twelevepageActivity"/>
+        <activity android:name=".elevenpageActivity"/>
+        <activity android:name=".sixteenpageActivity"/>
+        <activity android:name=".twentyonepageActivity"/>
+        <activity android:name=".twentyfourpageActivity"/>
+        <activity android:name=".thirteenpageActivity"/>
+        <activity android:name=".tenpageActivity"/>
+        <activity android:name=".ninepageActivity"/>
+
     </application>
 
 </manifest>

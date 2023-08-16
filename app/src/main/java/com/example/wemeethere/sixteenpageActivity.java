@@ -21,7 +21,7 @@ public class sixteenpageActivity extends AppCompatActivity {
         back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(sixteenpageActivity.this, twelvepageActivity.class);
+                Intent intent = new Intent(sixteenpageActivity.this, twelevepageActivity.class);
                 startActivity(intent);
             }
         });
