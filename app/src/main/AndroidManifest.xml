@@ -21,19 +21,17 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".sevenpageActivity" />
+        <activity android:name=".RegisterActivity" />
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".MainActivity" />
         <activity android:name=".sixpageActivity" />
-        <activity android:name=".MainActivity"/>
-        <activity android:name=".LoginActivity"/>
-        <activity android:name=".twentyfiveActivity"/>
-        <activity android:name=".twelevepageActivity"/>
-        <activity android:name=".elevenpageActivity"/>
-        <activity android:name=".sixteenpageActivity"/>
-        <activity android:name=".twentyonepageActivity"/>
-        <activity android:name=".twentyfourpageActivity"/>
-        <activity android:name=".thirteenpageActivity"/>
-        <activity android:name=".tenpageActivity"/>
-        <activity android:name=".ninepageActivity"/>
+        <activity android:name=".sevenpageActivity" />
+        <activity android:name=".thirteenpageActivity" />
+        <activity android:name=".ninepageActivity" />
+        <activity android:name=".tenpageActivity" />
+        <activity android:name=".elevenpageActivity" />
+        <activity android:name=".twelevepageActivity" />
+        <activity android:name=".sixteenpageActivity" />
 
     </application>
 
